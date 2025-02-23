@@ -1,0 +1,9 @@
+<section id="projects" class="projects">
+    <h2>Recent projects</h2>
+    <div class="projects-cards">
+      <div class="projects-card" *ngFor="let reason of reasons">
+        <h3>{{ reason.title }}</h3>
+        <p>{{ reason.description }}</p>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,30 @@
+footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+
+  footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  footer .social-links a:hover {
+    color: var(--secondary-color);
+  }
+
+  
+  .logo img{
+    height: 40px;
+    width: 60px;
+  
+  }

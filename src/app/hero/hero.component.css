@@ -1,0 +1,43 @@
+/* hero.component.scss */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;  /*#BFF098 → #6FD6FF*/
+    background: linear-gradient(135deg, #BFF098, #6FD6FF);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  .hero-content .cta-button {
+    animation: fadeIn 3s ease-in-out;
+    color:red;
+    border-radius:6px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

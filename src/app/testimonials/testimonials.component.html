@@ -1,0 +1,9 @@
+<section id="testimonials" class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonials-cards">
+      <div class="testimonials-card" *ngFor="let reason of reasons">
+        <h3>{{ reason.title }}</h3>
+        <p>{{ reason.description }}</p>
+      </div>
+    </div>
+  </section>
