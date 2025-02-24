@@ -18,9 +18,20 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Imm2';
+  title = 'Angular-Website';
 
-  scrollToElement(targetId: string): void {
+  
+  isMenuOpen = false;
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+  closeMenu(): void {
+    this.isMenuOpen = false;
+  }
+  
+}
+/**
+ scrollToElement(targetId: string): void {
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
@@ -28,4 +39,4 @@ export class AppComponent {
       });
     }
   }
-}
+ */

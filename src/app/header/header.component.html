@@ -1,5 +1,5 @@
 <header>
-    <nav>
+    <!--<nav>
       <div class="logo">
         StartUp Software
         <img src="" alt=" Software Logo">
@@ -11,6 +11,43 @@
         <li><a routerLink="projects" (click)="scrollToElement('#projects')">Projects</a></li>
         <li><a routerLink="contact" (click)="scrollToElement('#contact')">Contact Us</a></li>
       </ul>
+    </nav>-->
+
+    <nav id="desktop-nav"> 
+      <div class="logo">
+        Startup Software
+        <img  alt="Software Logo">
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-choose-us">Why-Choose-Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">
+        Startup Software
+        <img  alt=" Software Logo">
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" (click)="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>   
+        <div class="menu-links" [ngClass]="{'open': isMenuOpen}">
+          <li><a href="#services" (click)="closeMenu()">Services</a></li>
+          <li><a href="#why-choose-us" (click)="closeMenu()">Why-Choose-Us</a></li>
+          <li><a href="#testimonials" (click)="closeMenu()">Testimonials</a></li>
+          <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+          <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
   </header>
   
